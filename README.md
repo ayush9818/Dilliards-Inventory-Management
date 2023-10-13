@@ -1,4 +1,4 @@
-# ESWD_Group11_Project
+# MLDS_400_G11
 
 ## Weekly Updates
 
