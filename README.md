@@ -2,6 +2,41 @@
 
 ## Weekly Updates
 
+  <summary>Until 20th October</summary>
+
+ ### Setup the Postgres for all the teammates
+
+ This week, we successfully set up PostgresSQL for the entire team, and we also connected to the database as outlined by the GitHub instructions.
+
+ ### Completed the data ingestion in the database
+
+ We successfully uploaded all the data into PostgreSQL (especially transact.csv), and we conducted simple queries to ensure that all the data 
+ uploaded were correct. 
+
+ ### Write Scripts in Python to access the data from the Postgres Database
+
+While this was not officially completed, we were able to make significant progress in terms of connecting to the Postgres database from Python, which will make our workflow much more efficient.  We also tried integrating PySpark, but there are errors which needs to be fixed
+
+### More Data Cleaning & Analysis 
+
+Finally, we conducted more extensive data cleaning with the following findings on columns: 
+
+Department info:
+No signs of missing data, no data like “NA” or 0.
+
+SKU info:
+‘NA’ exists in Color and Size columns, the proportions of ‘NA’ with respect to the total number of rows are 0.001584 and 0.000447 respectively. Since they are categorical variables and need further cleaning, I replace them with ‘unknown’. I think we can also drop them as they only consist of a small proportion of data.
+0 exists in column Package Size. I believe they are missing data because the package size should be at least 1. Proportion of rows with PACKSIZE=0: 2.19e-05. I dropped them as there are so few of them.  
+
+STR info:
+Three rows with zip code 99999, which does not exist.
+Skst info:
+Less than 1 percent of cost and Retails have prices at 0.  Can do imputation but not sure if it is missing data or the actual price is 0. 
+Transact info: 
+about 1 percent of the three prices column has value 0. Not sure if it is missing data or the actual price is 0. 
+
+
+
 <details>
   <summary>Until 13th October</summary>
   
