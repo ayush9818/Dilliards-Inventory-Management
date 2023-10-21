@@ -35,7 +35,7 @@ Less than 1 percent of cost and Retails have prices at 0.  Can do imputation but
 Transact info: 
 about 1 percent of the three prices column has value 0. Not sure if it is missing data or the actual price is 0. 
 
-<details>
+</details>
 
 <details>
   <summary>Until 13th October</summary>
