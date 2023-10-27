@@ -2,6 +2,23 @@
 
 ## Weekly Updates
 <details>
+  <summary>Until 27th October</summary>
+
+###Connection to Postgres via Python
+
+Last week the team was successfully able to connect to the PostGres Database with the intention of working with the data set in Python. This week the team attempted to make the Python connection which included debugging and granting of permissions. The team is slated to be connected via Python by next week.
+
+###Continued Data Cleaning
+
+This past week several tables were being cleaned in small samples. Those changes have now been implemented into the full data set for completeness, though there are still data issues the team is looking into.
+
+###Analytics
+
+Plots have been generated for insights on the overall data that the team will review in the coming week.  An initial model has been built on a regression problem with the target variable is being ‘amount.’ The team will interpret this regression and look into other modeling objectives in the coming week. 
+
+</details>
+
+<details>
   <summary>Until 20th October</summary>
 
  ### Setup the Postgres for all the teammates
