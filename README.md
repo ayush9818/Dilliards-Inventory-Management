@@ -1,6 +1,40 @@
 # MLDS_400_G11
 
 ## Weekly Updates
+
+
+<details>
+
+From last week, the team has successfully connected to the PostGres database via python and all members are working with the dataset directly.
+
+**Model Development:**
+This week, our team has formulated a problem statement for the machine learning model designed as a regression problem: calculating the percentage of times an item has been returned. This model is not only predicting the probability of purchase or return of items but also serves as an inventory management strategy. By predicting these probabilities, we aim to enhance our understanding of customer behavior and refine our inventory control measures.
+
+To perform this we have streamlined the transaction data by grouping it by SKU and store, which has effectively reduced the training data volume. This optimization has led to a decrease in computing expenses without compromising the model's integrity.
+
+**Feature Engineering:**
+This week we have started to perform feature engineering, adding new features that will likely enhance the model's predictive capabilities:
+
+**Profit Margin per SKU:** This feature considers the profitability of individual items, which could influence their likelihood of being returned.
+
+**Discount Flag:** We're now distinguishing SKUs based on whether they are sold at a discount. This is based on selling prices being lower or higher than the original price, which might affect both purchase and return probabilities.
+
+**Store Inventory Levels:** We hypothesize that stores with a larger inventory might experience higher purchase and return rates. This feature has been added to our model to test this theory.
+
+**Demographic Data Integration:** The data set has been enriched with demographic data by state to provide a more nuanced view of customer profiles and behaviors.
+
+
+Preparations are underway for addressing the following areas in the coming week:
+**Feature Reductions:** We plan to implement feature reduction strategies to minimize overfitting and improve model generalization.
+
+**Dummy Variable Reduction:** To streamline the model, we will be reducing dummy variables which can lead to a bloated model with unnecessary complexity.
+
+**Hyperparameter Tuning:** Adjusting the model parameters to find the most effective settings for optimal model performance.
+
+**Feature Optimization and Modeling:** We will analyze different effects on the output to optimize the features for the model, and continue modeling the rest of the data.
+  
+</details>
+
 <details>
   <summary>Until 27th October</summary>
 
