@@ -4,6 +4,7 @@
 
 
 <details>
+  <summary>Until 3th November</summary>
 
 From last week, the team has successfully connected to the PostGres database via python and all members are working with the dataset directly.
 
