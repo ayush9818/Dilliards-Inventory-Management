@@ -8,7 +8,20 @@ Stable Code Branch : https://github.com/ayush9818/MLDS_400_G11/tree/team_experim
 
 
 <details>
-  <summary>Until 3th November</summary>
+  <summary>10th November</summary>
+
+This week we focused on optimizing our approach by grouping data by SKU and employing word embeddings on two categorical columns: Brand and Color. This technique was particularly beneficial in generating dummy variables, allowing us to effectively account for the variety of brands and colors that regularly enter our data set. After establishing this approach in our dataset, we explored various regression models. 
+
+These models were  tested through cross-validation, with their performance evaluated based on Mean Squared Error (MSE) and R-Squared (R2) metrics. Unfortunately, the results were underwhelming. The models' predictive capability was only marginally better than a simple horizontal line prediction, indicating a significant need for further refinement.
+
+Given these results, we assessed the potential improvements from outlier detection and the transformation of current variables, aiming to enhance model performance. However, these adjustments did not yield the desired effect. Moving forward, we plan to shift our strategy by transforming the problem into a classification task. Our goal will be to predict whether an item falls into low, medium, or high return categories. 
+
+Additionally, we intend to apply the same feature engineering techniques to transaction-level data. By building and assessing a model under these new parameters, we aim to determine if this approach yields more favorable results. This pivot in strategy reflects our commitment to continually adapting our methods to better understand and predict our data trends.
+  
+</details>
+
+<details>
+  <summary>3th November</summary>
 
 From last week, the team has successfully connected to the PostGres database via python and all members are working with the dataset directly.
 
@@ -41,7 +54,7 @@ Preparations are underway for addressing the following areas in the coming week:
 </details>
 
 <details>
-  <summary>Until 27th October</summary>
+  <summary>27th October</summary>
 
 ###Connection to Postgres via Python
 
@@ -58,7 +71,7 @@ Plots have been generated for insights on the overall data that the team will re
 </details>
 
 <details>
-  <summary>Until 20th October</summary>
+  <summary>20th October</summary>
 
  ### Setup the Postgres for all the teammates
 
@@ -94,7 +107,7 @@ about 1 percent of the three prices column has value 0. Not sure if it is missin
 </details>
 
 <details>
-  <summary>Until 13th October</summary>
+  <summary>13th October</summary>
   
   ### Data Subsampling and Formatting [CodeLink](https://github.com/ayush9818/ESWD_Group11_Project/blob/main/DataPrep.ipynb)
   1. Subsampled 1% data from Transact.csv and Skuinfo.csv files using Python for exploratory purposes as the original files were too large to load in Python or R. 
