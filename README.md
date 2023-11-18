@@ -11,12 +11,16 @@ Stable Code Branch : https://github.com/ayush9818/MLDS_400_G11/tree/team_experim
 
 **Data Preprocessing:**
 This week, we continued refining our dataset through outlier detection and data filtering, focusing on SKUs with over 30 transactions. This has effectively reduced our dataset to around 50,000 rows, optimizing it for analysis.
+
 **Model Development and Challenges:**
 We initially shifted our model from regression to classification, categorizing items into three return probability tiers: high, medium, and low. We fitted various models - decision tree, Naive Bayes, logistic regression, random forest, and XGBoost, and conducted hyperparameter tuning. However, we encountered challenges with this approach. The classification model’s performance in predicting returns showed low accuracy, indicating that our current features might not be strong predictors.
+
 **Strategic Pivot in Project:**
 After evaluating our approach, we conducted more detailed correlation analysis and data visualization to understand the relationships between different variables better. This led us to a crucial decision to change our project’s direction. Instead of predicting item return probabilities, we are now focusing on predicting the selling price based on store and SKU.
+
 **Business Impact Reassessment:**
 Our initial research into the impact of eCommerce returns and business strategies remains valuable. However, we’re now redirecting this understanding towards how accurately predicting selling prices can provide business insights and potentially increase ROI.
+
 **Revised Next Steps:**
 With this new direction, our upcoming activities will include:
 Data Preprocessing and Feature Engineering: Tailoring our dataset for the new predictive model.
