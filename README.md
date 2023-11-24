@@ -6,7 +6,19 @@ Stable Code Branch : https://github.com/ayush9818/MLDS_400_G11/tree/team_experim
 
 ## Weekly Updates
 
+
+
 <details>
+  <summary>24th November</summary>
+
+Now that the team is focusing on predicting the selling price based on store and SKU, we have been underway with data preprocessing and feature engineering phase, where we will clean, transform, and enrich our dataset to ensure it is primed for predictive modeling. This stage will involve scrutinizing data quality, scaling and encoding variables, and creating new features to capture the nuances that influence selling prices. Following this, we will embark on Building and Evaluating the New Model, selecting an algorithm, and training it while assessing its predictive power through validation. The aim is to fine-tune this predictive model to offer precise selling price forecasts.
+
+In parallel, we will conduct business insight research to understand how these price predictions can strategically benefit our operations, influencing decisions from pricing strategies to inventory control. These insights will help in drafting our final report, the model’s performance, and its projected impact on enhancing business efficiency. The report will summarize our findings and recommendations for practical application in ensuring the model’s continued relevance and adaptability to market dynamics.
+  
+</details>
+
+<details>
+  
   <summary>17th November</summary>
 
 **Data Preprocessing:**
