@@ -5,6 +5,8 @@ __pycache__/
 
 # C extensions
 *.so
+models
+data/*.emb
 data/*.csv
 # Distribution / packaging
 .Python
