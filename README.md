@@ -11,11 +11,17 @@ The `codes` folder contains a series of Jupyter notebooks that form the backbone
 ### FeatureEngineering_Notebook.ipynb
 - **Purpose**: This notebook is dedicated to the feature engineering process, where raw data is transformed and enriched to improve the performance of machine learning models.
 - **Brief Summary**:
-  - Point 1
-  - Point 2
+  - Loads open-source state demographics data.
+  - Reads all the tables from the database.
+  - Reads the extracted grouped dataframe by SKU, STORE, and Quarter.
+  - Merges all the dataframes together to create the final dataframe.
+  - Engineers external features such as Menratio, Unemployment rate, Asian Perc, Profit margin, and discounted variables.
 - **Data Used**:
-  - `data/state_demographics.csv` - Kevin to Write One Line description
-  - `data/df_final_sku_store_quarter_noextinfo.csv` - Kevin to Write One Line description
+  - `data/state_demographics.csv` - Open source data containing state level info of ratio of different ethinicity people, poverty ratio etc
+  - `data/transact_grp_sku_store_quarter_v1.csv` - CSV fetched from database, grouped on STORE, SKU and Quarter
+- **Note**
+  - This notebook generates `df_final_sku_store_quarter_v3.csv` as output which is used in training_data_prep notebook
+  - To generate `df_final_sku_store_quarter_v2.csv` for inference notebook below, run this notebook with data `data/transact_grp_sku_store_quarter_v2.csv`
 
 ### training_data_prep.ipynb
 - **Purpose**: Used for preparing sampled dataset for training experiments. The dataset generated here is use in Modelling_Experiments_Notebook.ipynb
