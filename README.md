@@ -1,5 +1,57 @@
 # MLDS_400_G11
 
+
+## Code Documentation
+
+## Overview
+The `codes` folder contains a series of Jupyter notebooks that form the backbone of our data analysis, feature engineering, model training, and evaluation. Each notebook is tailored to handle specific aspects of the machine learning and data science workflow.
+
+## Notebooks
+
+### FeatureEngineering_Notebook.ipynb
+- **Purpose**: This notebook is dedicated to the feature engineering process, where raw data is transformed and enriched to improve the performance of machine learning models.
+- **Brief Summary**:
+  - Point 1
+  - Point 2
+- **Data Used**:
+  - `data/state_demographics.csv` - Kevin to Write One Line description
+  - `data/df_final_sku_store_quarter_noextinfo.csv` - Kevin to Write One Line description
+
+### Model_Inference_Notebook.ipynb
+- **Purpose**: Focuses on applying trained models to new data to make predictions or inferences, essential for evaluating model performance on unseen data.
+- **Brief Summary**:
+   - Loads the dataset and the finalized XGBoost model for making inferences.
+   - Applies logarithmic transformations to price-related variables such as cost, retail price, and revenue to normalize the distribution.
+   - Generates dummy variables for categorical features to prepare them for model input.Conducts batch inference on the entire dataset, which contains approximately 6 million rows, to efficiently handle large-scale data.
+   - Creates a dataframe for ROI analysis that assigns baseline revenue to each record, utilizing the previous quarter's revenue as a baseline for each SKU and store combination.
+- **Data Used**:
+  - `data/df_final_sku_store_quarter_v2.csv` - final dataframe which contain sku and store level information with engineered features and target values
+
+
+### Modelling_Experiments_Notebook.ipynb
+- **Purpose**: Used for conducting various modeling experiments, fine-tuning hyperparameters, and selecting the best models based on performance metrics.
+
+### ROI_Analysis.ipynb
+- **Purpose**: Performs an analysis on the Return on Investment (ROI) for the models or features implemented, crucial for understanding the economic impact.
+
+### database_tables_eda.ipynb
+- **Purpose**: Contains exploratory data analysis (EDA) on the database tables, providing insights and understanding of the underlying data structure and content.
+
+### engineered_data_eda.ipynb
+- **Purpose**: Explores the dataset post feature engineering to assess the quality and potential of the engineered features.
+
+<!--
+## Usage
+To run these notebooks, ensure that you have Jupyter installed and that all the dependencies listed in `requirements.txt` are satisfied.
+
+## Contributing
+Contributions to these notebooks are welcome. Please fork the repository, make your changes, and submit a pull request for review.
+
+## Contact
+For any queries or assistance with these notebooks, please raise an issue in the repository or contact the maintainers directly.
+-->
+
+
 ## Weekly Updates
 
 <details>
