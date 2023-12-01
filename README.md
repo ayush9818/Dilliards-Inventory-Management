@@ -30,6 +30,19 @@ The `codes` folder contains a series of Jupyter notebooks that form the backbone
 
 ### Modelling_Experiments_Notebook.ipynb
 - **Purpose**: Used for conducting various modeling experiments, fine-tuning hyperparameters, and selecting the best models based on performance metrics.
+- **Brief Summary**:
+  - Loads a sampled subset of the training dataset and divides it into training and validation sets for model evaluation.
+  - Conducts experiments with a variety of machine learning models, including:
+    - Linear Regression to establish a baseline performance.
+    - Ridge Regression, employing K-fold cross-validation to find the optimal regularization parameter (lambda).
+    - Lasso Regression, similarly using K-fold cross-validation to fine-tune the lambda value.
+    - XGBoost Regressor, utilizing K-fold cross-validation to optimize its hyperparameters.
+    - Decision Trees, evaluated using K-fold cross-validation to assess their performance.
+    - Random Forest, to compare ensemble learning performance against other models.
+  - Determines that the XGBoost Regressor outperforms other models, achieving an R-squared value of **73.72%** and a Mean Squared Error (MSE) of **0.256**.
+- **Data Used**:
+   - `data/sample_train_v1.csv` - sampled dataset containing 400k rows with 320k training samples and 80k validation samples
+
 
 ### ROI_Analysis.ipynb
 - **Purpose**: Performs an analysis on the Return on Investment (ROI) for the models or features implemented, crucial for understanding the economic impact.
