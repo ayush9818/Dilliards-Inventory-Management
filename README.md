@@ -17,15 +17,16 @@ The `codes` folder contains a series of Jupyter notebooks that form the backbone
   - `data/state_demographics.csv` - Kevin to Write One Line description
   - `data/df_final_sku_store_quarter_noextinfo.csv` - Kevin to Write One Line description
 
-### Model_Inference_Notebook.ipynb
-- **Purpose**: Focuses on applying trained models to new data to make predictions or inferences, essential for evaluating model performance on unseen data.
+### training_data_prep.ipynb
+- **Purpose**: Used for preparing sampled dataset for training experiments. The dataset generated here is use in Modelling_Experiments_Notebook.ipynb
 - **Brief Summary**:
-   - Loads the dataset and the finalized XGBoost model for making inferences.
-   - Applies logarithmic transformations to price-related variables such as cost, retail price, and revenue to normalize the distribution.
-   - Generates dummy variables for categorical features to prepare them for model input.Conducts batch inference on the entire dataset, which contains approximately 6 million rows, to efficiently handle large-scale data.
-   - Creates a dataframe for ROI analysis that assigns baseline revenue to each record, utilizing the previous quarter's revenue as a baseline for each SKU and store combination.
+  - Loads the feature-engineered dataframe from the file "df_final_sku_store_quarter_v3.csv."
+  - Applies logarithm transformations to price variables.
+  - Creates dummy variables for categorical variables as needed.
+  - Samples 400,000 rows from the dataset.
+  - Splits the data into an 80% training set and a 20% validation set.
 - **Data Used**:
-  - `data/df_final_sku_store_quarter_v2.csv` - final dataframe which contain sku and store level information with engineered features and target values
+   - `data/df_final_sku_store_quarter_v3.csv` - sampled dataset containing 400k rows with 320k training samples and 80k validation samples
 
 
 ### Modelling_Experiments_Notebook.ipynb
@@ -42,6 +43,16 @@ The `codes` folder contains a series of Jupyter notebooks that form the backbone
   - Determines that the XGBoost Regressor outperforms other models, achieving an R-squared value of **73.72%** and a Mean Squared Error (MSE) of **0.256**.
 - **Data Used**:
    - `data/sample_train_v1.csv` - sampled dataset containing 400k rows with 320k training samples and 80k validation samples
+
+### Model_Inference_Notebook.ipynb
+- **Purpose**: Focuses on applying trained models to new data to make predictions or inferences, essential for evaluating model performance on unseen data.
+- **Brief Summary**:
+   - Loads the dataset and the finalized XGBoost model for making inferences.
+   - Applies logarithmic transformations to price-related variables such as cost, retail price, and revenue to normalize the distribution.
+   - Generates dummy variables for categorical features to prepare them for model input.Conducts batch inference on the entire dataset, which contains approximately 6 million rows, to efficiently handle large-scale data.
+   - Creates a dataframe for ROI analysis that assigns baseline revenue to each record, utilizing the previous quarter's revenue as a baseline for each SKU and store combination.
+- **Data Used**:
+  - `data/df_final_sku_store_quarter_v2.csv` - final dataframe which contain sku and store level information with engineered features and target values
 
 
 ### ROI_Analysis.ipynb
