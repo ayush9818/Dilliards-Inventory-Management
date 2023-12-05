@@ -85,6 +85,14 @@ For any queries or assistance with these notebooks, please raise an issue in the
 ## Weekly Updates
 
 <details>
+  <summary>1st December</summary>
+
+This week, our team wrapped up all the coding sections of our project, including the final visualizations of the cleaned data and the complete feature engineering process. We also finished training and fine-tuning our models for predicting future selling prices and evaluated their performance using metrics like MSE and R-squared. Alongside this, we compared our model to the basline model and conducted an ROI analysis to see how much we've saved on inventory costs compared to our baseline. 
+We're almost done with the draft of our final report and have added some more analysis and visualizations to the appendix. In terms of presentation, we've started building slides and brainstorming how to present our project effectively. Lastly, we made sure all our files are organized and up-to-date on GitHub, including an updated README file.
+
+</details>
+
+<details>
   <summary>24th November</summary>
 
 Now that the team is focusing on predicting the selling price based on store and SKU, we have been underway with data preprocessing and feature engineering phase, where we will clean, transform, and enrich our dataset to ensure it is primed for predictive modeling. This stage will involve scrutinizing data quality, scaling and encoding variables, and creating new features to capture the nuances that influence selling prices. Following this, we will embark on Building and Evaluating the New Model, selecting an algorithm, and training it while assessing its predictive power through validation. The aim is to fine-tune this predictive model to offer precise selling price forecasts.
