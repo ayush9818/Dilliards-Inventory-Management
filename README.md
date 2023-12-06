@@ -62,7 +62,15 @@ The `codes` folder contains a series of Jupyter notebooks that form the backbone
 
 
 ### ROI_Analysis.ipynb
-- **Purpose**: Performs an analysis on the Return on Investment (ROI) for the models or features implemented, crucial for understanding the economic impact.
+- **Purpose**: Conduct ROI analysis. We look at SKUs with non-null previous quarter revenues, and we compare our model predictions with a baseline model (predicting revenue as last quarter’s revenue) for overstocked items.
+- **Brief Summary:**
+  - Data Preparation: The script merges these datasets and filters for SKUs with non-null revenues in the previous quarter. It also calculates actual, baseline, and modelled total costs for each SKU.
+  - Total Revenue Prediction: Comparing actual, predicted, and baseline revenues.
+  - Number of Items Oversold: Assessing the count of items where predicted or baseline revenues exceeded actual revenues.
+  - Dollar Savings from Overstocked Items: Estimating the monetary value saved or lost due to overstocking, as predicted by the models.
+  - Cost Savings from Overstocked Items: Calculating cost savings or losses due to overstocking based on the actual cost of goods.
+  - Visual Representation: The script generates various plots to visualize the findings, including revenue comparisons and bar charts showing the number of items oversold and the financial impact of these overstocking errors.
+- **Data Used**: data/final_roi_analysis_v2.csv - final data frame with predictions of the quarter’s revenue, with a column called base_line which is the previous quarter’s revenue (NaN if not available)
 
 ### database_tables_eda.ipynb
 - **Purpose**: Contains exploratory data analysis (EDA) on the database tables, providing insights and understanding of the underlying data structure and content.
