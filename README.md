@@ -7,11 +7,11 @@
 The `codes` folder contains a series of Jupyter notebooks that form the backbone of our data analysis, feature engineering, model training, and evaluation. Each notebook is tailored to handle specific aspects of the machine learning and data science workflow.
 
 ## SQL Code
-- **trnsact.sql** : Code to generate transact_grp_sku_store_quarter_v1.csv
+- **SQLScripts/trnsact.sql** : Code to generate transact_grp_sku_store_quarter_v1.csv
 
 ## Notebooks
 
-### FeatureEngineering_Notebook.ipynb
+### FeatureEngineering/FeatureEngineering_Notebook.ipynb
 - **Purpose**: This notebook is dedicated to the feature engineering process, where raw data is transformed and enriched to improve the performance of machine learning models.
 - **Brief Summary**:
   - Loads open-source state demographics data.
@@ -26,7 +26,7 @@ The `codes` folder contains a series of Jupyter notebooks that form the backbone
   - This notebook generates `df_final_sku_store_quarter_v3.csv` as output which is used in training_data_prep notebook
   - To generate `df_final_sku_store_quarter_v2.csv` for inference notebook below, run this notebook with data `data/transact_grp_sku_store_quarter_v2.csv`
 
-### training_data_prep.ipynb
+### Modelling/training_data_prep.ipynb
 - **Purpose**: Used for preparing sampled dataset for training experiments. The dataset generated here is use in Modelling_Experiments_Notebook.ipynb
 - **Brief Summary**:
   - Loads the feature-engineered dataframe from the file "df_final_sku_store_quarter_v3.csv."
@@ -38,7 +38,7 @@ The `codes` folder contains a series of Jupyter notebooks that form the backbone
    - `data/df_final_sku_store_quarter_v3.csv` - sampled dataset containing 400k rows with 320k training samples and 80k validation samples
 
 
-### Modelling_Experiments_Notebook.ipynb
+### Modelling/Modelling_Experiments_Notebook.ipynb
 - **Purpose**: Used for conducting various modeling experiments, fine-tuning hyperparameters, and selecting the best models based on performance metrics.
 - **Brief Summary**:
   - Loads a sampled subset of the training dataset and divides it into training and validation sets for model evaluation.
@@ -53,7 +53,7 @@ The `codes` folder contains a series of Jupyter notebooks that form the backbone
 - **Data Used**:
    - `data/sample_train_v1.csv` - sampled dataset containing 400k rows with 320k training samples and 80k validation samples
 
-### Model_Inference_Notebook.ipynb
+### Modelling/Model_Inference_Notebook.ipynb
 - **Purpose**: Focuses on applying trained models to new data to make predictions or inferences, essential for evaluating model performance on unseen data.
 - **Brief Summary**:
    - Loads the dataset and the finalized XGBoost model for making inferences.
@@ -64,7 +64,7 @@ The `codes` folder contains a series of Jupyter notebooks that form the backbone
   - `data/df_final_sku_store_quarter_v2.csv` - final dataframe which contain sku and store level information with engineered features and target values
 
 
-### ROI_Analysis.ipynb
+### RoiAnalysis/ROI_Analysis.ipynb
 - **Purpose**: Conduct ROI analysis. We look at SKUs with non-null previous quarter revenues, and we compare our model predictions with a baseline model (predicting revenue as last quarter’s revenue) for overstocked items.
 - **Brief Summary:**
   - Data Preparation: The script merges these datasets and filters for SKUs with non-null revenues in the previous quarter. It also calculates actual, baseline, and modelled total costs for each SKU.
@@ -75,10 +75,10 @@ The `codes` folder contains a series of Jupyter notebooks that form the backbone
   - Visual Representation: The script generates various plots to visualize the findings, including revenue comparisons and bar charts showing the number of items oversold and the financial impact of these overstocking errors.
 - **Data Used**: data/final_roi_analysis_v2.csv - final data frame with predictions of the quarter’s revenue, with a column called base_line which is the previous quarter’s revenue (NaN if not available)
 
-### database_tables_eda.ipynb
+### EDA/database_tables_eda.ipynb
 - **Purpose**: Contains exploratory data analysis (EDA) on the database tables, providing insights and understanding of the underlying data structure and content.
 
-### engineered_data_eda.ipynb
+### EDA/engineered_data_eda.ipynb
 - **Purpose**: Explores the dataset post feature engineering to assess the quality and potential of the engineered features.
 
 <!--
