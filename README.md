@@ -7,12 +7,12 @@
   - [SQL Code](#sql-code)
   - [Notebooks](#notebooks)
     - [FeatureEngineering\_Notebook.ipynb](#featureengineeringfeatureengineering_notebookipynb)
-    - [Modelling/training\_data\_prep.ipynb](#modellingtraining_data_prepipynb)
-    - [Modelling/Modelling\_Experiments\_Notebook.ipynb](#modellingmodelling_experiments_notebookipynb)
-    - [Modelling/Model\_Inference\_Notebook.ipynb](#modellingmodel_inference_notebookipynb)
-    - [RoiAnalysis/ROI\_Analysis.ipynb](#roianalysisroi_analysisipynb)
-    - [EDA/database\_tables\_eda.ipynb](#edadatabase_tables_edaipynb)
-    - [EDA/engineered\_data\_eda.ipynb](#edaengineered_data_edaipynb)
+    - [training\_data\_prep.ipynb](#modellingtraining_data_prepipynb)
+    - [Modelling\_Experiments\_Notebook.ipynb](#modellingmodelling_experiments_notebookipynb)
+    - [Model\_Inference\_Notebook.ipynb](#modellingmodel_inference_notebookipynb)
+    - [ROI\_Analysis.ipynb](#roianalysisroi_analysisipynb)
+    - [database\_tables\_eda.ipynb](#edadatabase_tables_edaipynb)
+    - [engineered\_data\_eda.ipynb](#edaengineered_data_edaipynb)
 - [Weekly Updates](#weekly-updates)
 
 ## Code Documentation
