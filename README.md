@@ -1,8 +1,8 @@
 # MLDS_400_G11
 
 
-- [MLDS\_400\_G11](#mlds_400_g11)
-  - [Code Documentation](#code-documentation)
+<!-- - [MLDS\_400\_G11](#mlds_400_g11) -->
+- [Code Documentation](#code-documentation)
   - [Overview](#overview)
   - [SQL Code](#sql-code)
   - [Notebooks](#notebooks)
@@ -13,15 +13,15 @@
     - [RoiAnalysis/ROI\_Analysis.ipynb](#roianalysisroi_analysisipynb)
     - [EDA/database\_tables\_eda.ipynb](#edadatabase_tables_edaipynb)
     - [EDA/engineered\_data\_eda.ipynb](#edaengineered_data_edaipynb)
-  - [Weekly Updates](#weekly-updates)
-    - [Setup the Postgres for all the teammates](#setup-the-postgres-for-all-the-teammates)
-    - [Completed the data ingestion in the database](#completed-the-data-ingestion-in-the-database)
-    - [Write Scripts in Python to access the data from the Postgres Database](#write-scripts-in-python-to-access-the-data-from-the-postgres-database)
-    - [More Data Cleaning \& Analysis](#more-data-cleaning--analysis)
-    - [Data Subsampling and Formatting CodeLink](#data-subsampling-and-formatting-codelink)
-    - [Postgres and Database Setup](#postgres-and-database-setup)
-    - [Data Exploration CodeLink](#data-exploration-codelink)
-    - [Next Steps](#next-steps)
+- [Weekly Updates](#weekly-updates)
+  - [Setup the Postgres for all the teammates](#setup-the-postgres-for-all-the-teammates)
+  - [Completed the data ingestion in the database](#completed-the-data-ingestion-in-the-database)
+  - [Write Scripts in Python to access the data from the Postgres Database](#write-scripts-in-python-to-access-the-data-from-the-postgres-database)
+  - [More Data Cleaning \& Analysis](#more-data-cleaning--analysis)
+  - [Data Subsampling and Formatting CodeLink](#data-subsampling-and-formatting-codelink)
+  - [Postgres and Database Setup](#postgres-and-database-setup)
+  - [Data Exploration CodeLink](#data-exploration-codelink)
+  - [Next Steps](#next-steps)
 
 ## Code Documentation
 
