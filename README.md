@@ -6,6 +6,9 @@
 ## Overview
 The `codes` folder contains a series of Jupyter notebooks that form the backbone of our data analysis, feature engineering, model training, and evaluation. Each notebook is tailored to handle specific aspects of the machine learning and data science workflow.
 
+## SQL Code
+- **trnsact.sql** : Code to generate transact_grp_sku_store_quarter_v1.csv
+
 ## Notebooks
 
 ### FeatureEngineering_Notebook.ipynb
