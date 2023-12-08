@@ -34,7 +34,7 @@ Each folder contains a series of Jupyter notebooks that form the backbone of our
   - Merges all the dataframes together to create the final dataframe.
   - Engineers external features such as Menratio, Unemployment rate, Asian Perc, Profit margin, and discounted variables.
 - **Data Used**:
-  - `data/state_demographics.csv` - Open source data containing state level info of ratio of different ethinicity people, poverty ratio etc
+  - `data/state_demographics.csv` - Open source data containing state level info of ratio of different ethinicity people, poverty ratio etc. [Link](https://www.kaggle.com/datasets/muonneutrino/us-census-demographic-data/?select=acs2015_county_data.csv)
   - `data/transact_grp_sku_store_quarter_v1.csv` - CSV fetched from database, grouped on STORE, SKU and Quarter
 - **Note**
   - This notebook generates `df_final_sku_store_quarter_v3.csv` as output which is used in training_data_prep notebook
